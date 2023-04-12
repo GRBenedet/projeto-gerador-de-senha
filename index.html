@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senha</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+            <img src="./img/Enter OTP-pana.png" alt="logo">
+        <div class="part-inferior">
+            <span>Senha de <span id="valor"></span> carateres</span>
+            <input id="slide" class="slide" type="range" min="4" max="30" value="15">
+            <button id="gerador-act" class="botao"onclick="gerarSenha()">Gerar</button>
+        </div>
+        <div id="contanier-senha" class="contanier-senha hide" onclick="copypassword()">
+            <span class="titulo">Parabens, sua senha foi gerada!!!</span>
+            <span id="senha" class="senha"></span>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
